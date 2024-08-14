@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les delices de la ville</title>
+    <link rel="stylesheet" href="code.css">
+    <style>
+        .container{
+            position: relative;
+            display: inline;
+        }
+        .image{
+            display: block;
+            width: 100%;
+        }
+        .centered-button{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50,-50);
+            background-color: #1273c9;
+            color: rgb(243, 247, 250);
+            padding: 30px 40px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            align-items: center;
+            padding: 20px;
+        }
+        .grid-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .grid-container .text-content {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: #1826ca;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="sty">les delices de la vie</h1>
+    <nav class="sty">
+        <a href="Accueil">Accueil</a>
+        <a href="Menu">Menu</a>
+        <a href="A propos">A propos</a>
+        <a href="Contact">Contact</a>
+        <!--barre de recherche-->
+        <form action="/recherche" method="get" style="right: auto;" class="sty">
+            <label for="search">Recherche</label>
+            <input type="search" name="query" aria-placeholder="taper votre recherche">
+            <button type="submit">Recherche</button>
+        </form>
+    </nav>
+    <div class="container"><img src="https://www.pizzalazza.com.tr/PictureUpload/963fe314-337b-42b0-acce-ae18ebac67a9_.jpg" id="image" alt="" class="image">
+        <button class="centered-button" style="font-size: x-large;">savoir plus</button>
+    </div>
+    <h2 class="hi">bienvenue dans notre site les delice de la ville</h2>    
+    <p class="para">Decouvrez une cuisine authentique, preparéée avec des ingredients frais et locaux dans, dans une ambiance chaleureuse et accueillante. Que vous soyez ici pour un dejeuner entre amis, un diner romantique, ou une soirée en famille, nous avons a coeur de rendre chaque moment inoubliable. </p>
+    <br>
+    <article class="card">
+        <header>
+            <h2 style="color: rgb(39, 122, 185);">pour des prix exceptionnel</h2>
+        </header>
+        <img src="https://th.bing.com/th?id=OIP.WMrYOvAxBnV99b-FIni0twHaF7&w=279&h=223&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="">
+        <div>
+            <br>
+            <p style="display: block;" class="par">pour des prix exceptions vous avez un large choix de gourmandise</p>
+        </div>
+        <footer style="color: rgb(35, 100, 179);">les plats delicieux pour 15000F</footer>
+    </article>
+    <article class="card">
+        <header>
+            <h2 style="color: rgb(42, 42, 192);">Des cremes chantilly</h2>
+        </header>
+        <img src="https://www.letribunaldunet.fr/wp-content/uploads/2020/04/salade-de-fruits-a-la-creme-chantilly-preparation-maison-a-tomber-par-terre.jpg" id="ima" alt="">
+        <div>
+            <br>
+            <p class="para-1">Des cremes chantilly a la fraise pour le prix extraordinaire de 5000F</p>
+        </div>
+        <footer style="color: rgb(80, 80, 220);">ooooohhhh quel delice</footer>
+    </article>
+    <article class="card">
+        <header>
+            <h2 style="color: rgb(25, 25, 173);">Des gateaux au chocolats</h2>
+        </header>
+        <img src="https://th.bing.com/th/id/OIP.jD8HTkBkGPWqHnpQnjKaBAHaHa?w=194&h=194&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+        <div>
+            <br>
+            <p class="para-2">Des larges saveurs de gateaux tel que le gateaux au chocolats au prix de 19500F</p>
+        </div>
+        <footer style="color: #1273c9;">gateaux au chocolats</footer>
+    </article>
+    <div class="grid-container"><img src="https://th.bing.com/th/id/OIP.DFsBO6qKrylXJS0u-7gyhAHaFc?rs=1&pid=ImgDetMain" alt="">
+        <div class="text-content">
+            <h2 style="color: whitesmoke;">A propos des delices de la vie</h2>
+            <p>bienvenue aux delices de la vie,ou chaque plat est une oeuvre d'art culinaire. Venez decouvrir une ambiance chaleureuse et un service attentionné qui feront de chaque visite un moment inoubliable.</p>
+        </div>
+    </div>  
+    <form action="/submit_form" method="post" style="color: rgb(12, 154, 242);">
+        <label for="name">nom</label>
+        <br>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="email">adresse Email</label>
+        <br>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="message">Message</label>
+        <br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        <br>
+        <input type="submit" value="Envoyer">
+    </form>      
+</body>
+</html>
